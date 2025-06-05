@@ -10,7 +10,7 @@ user2 Cleartext-Password := "1234"
     Reply-Message := "Welcome user2",
     Service-Type := NAS-Prompt-User
 
-# Default rule: reject if not admin 
+# Default rule: reject if not admin   
 DEFAULT Service-Type != Administrative-User
     Reply-Message := "Permission Denied",
     Auth-Type := Reject
