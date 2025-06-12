@@ -1,0 +1,9 @@
+.venv/
+.python-version
+logs/*
+
+log/
+
+dictionary
+
+*.pyc

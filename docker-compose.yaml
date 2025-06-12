@@ -1,0 +1,13 @@
+services:
+  freeradius:
+    container_name: free
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
+    command: ["/bin/bash"]
+    network_mode: "host"
+    volumes:
+      - ./:/app
+      - ./logs:/var/log/freeradius
